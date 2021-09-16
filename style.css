@@ -35,7 +35,7 @@ section{
 }
 
 /*tab*/
-@media (min-width: 768px) {
+@media (min-width: 768px){
     .hero_img{
         margin-top: 2rem;
     }
@@ -46,6 +46,11 @@ section{
     }
     .hero_img{
         margin-top: 2rem;
+    }
+    .vid_footage_cont{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
     }
     .vid_footage_text{
         margin-left: 2rem;
@@ -103,7 +108,7 @@ section{
 }
 
 /*laptop*/
-@media (min-width: 1200px) {
+@media(min-width: 1200px){
     .container{
         max-width: 1140px;
     }
@@ -165,7 +170,7 @@ section{
 
 .button_primary{
     margin: 10px;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     text-align: center;
     text-transform: capitalize;
     transition: 0.5s;
@@ -184,7 +189,7 @@ section{
 }
 
 .hero_cont{
-    margin: 1rem;
+    margin: 0rem;
 }
 
 .hero_img_cont{
@@ -214,8 +219,8 @@ section{
 }
 
 .hero_text{
-    font-size: 2.85rem;
-    line-height: 2.75rem;
+    font-size: 1.85rem;
+    line-height: 2.25rem;
     color: #1d3557;
     font-weight: 900;/*not satisfied with boldness*/
 }
@@ -241,11 +246,11 @@ section{
         #ff512f 100%);
         content: "";
         top: 0;
-        left: 0;
+        left: 15px;
         position: absolute;
         transform: translate(1rem, 1rem);
         height: 100%;
-        width: 100%;
+        width: 90%;
         z-index: -1;
 }
 
@@ -259,11 +264,24 @@ section{
 
 .food_list_cont{
     position: relative;
-    margin: 5rem 0;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.text-x1{
+    font-size: 1.5rem;
+    color: #1d3557;
+    font-weight: 800;
 }
 
 .food_menu_card_list{
     width: 100%;
+}
+
+.food_menu_card{
+    margin: 1rem 0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .food_card_img{
@@ -285,7 +303,7 @@ section{
 }
 
 .restaurant_list_cont{
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .restaurant_list_text{
@@ -298,7 +316,7 @@ section{
 }
 
 .restaurant_list_row_2{
-    margin-top: 10px;
+    margin-top: 13px;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
@@ -322,4 +340,88 @@ section{
     height: 100px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.button_primary_big{
+    margin-top: 1rem;
+    margin-left: 0;
+    width: 100%;
+    height: 3.25rem;
+    font-size: 1.15rem;
+    font-weight: 100;
+    border-radius: 5px;
+    background-image:  linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%);
+    color: white;    
+}
+
+.email_cont{
+    margin-left: 1rem;
+}
+
+.email_input_field{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.email_placeholder{
+    padding: .5rem .5rem;
+    font-weight: 700;
+    margin-top: .75rem;
+    color: #1d3557;
+    background-color: #fcedf0;
+    border: 1px solid #ee89a0;
+    border-radius: 5px;
+}
+
+.image_quote_cont{
+    margin-top: 5rem;
+    background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+    center center / cover no-repeat;
+    background-color: #0a4065;
+    opacity: 75%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.quote_image{
+    
+    height: 200px;
+   
+}
+
+.quote_text{
+    z-index: 10;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+footer{
+    height: 350px;
+    background-image:  linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.footer_logo{
+    filter: brightness(0) invert(1);
+}
+
+li{
+    margin: 5px;
 }
